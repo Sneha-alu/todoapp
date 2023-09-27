@@ -1,0 +1,26 @@
+#todoCarousel.carousel {
+    max-width: 60%; /* Adjust the percentage as needed */
+    margin: 0 auto; /* Center the carousel horizontally */
+    max-height: "100px";
+}
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: #c3efe6; /* Set your desired dark color */
+    color: #fff; /* Text color for the buttons */
+    opacity: 0.8; /* Adjust the opacity as needed */
+}
+
+/* Hover effect for the buttons (optional) */
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    background-color: #e9e5e5; /* Darker color on hover */
+}
+.carousel-item {
+    /* display: flex; */
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+}
+.carousel {
+    width: 500px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+}
