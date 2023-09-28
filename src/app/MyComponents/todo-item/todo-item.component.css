@@ -1,3 +1,10 @@
 .strike{
     text-decoration: line-through;
 }
+
+.header {
+    display: flex; /* Use flexbox to arrange elements in a row */
+    justify-content: space-between; /* Add space between elements */
+    align-items: center; /* Vertically align elements in the center */
+    margin-bottom: 20px; /* Add space at the bottom for separation */
+}

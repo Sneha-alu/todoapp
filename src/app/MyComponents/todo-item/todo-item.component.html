@@ -1,4 +1,4 @@
-<div class="my-3"> 
+<!-- <div class="my-3"> 
     <h5 [ngClass]="{'strike': !todo.active}">{{todo.title}}</h5>
     <p [ngClass]="{'strike': !todo.active}">{{todo.desc}}</p>
     <div class="form-group form-check">
@@ -6,4 +6,22 @@
         <label class="form-check-label" >Done</label>
       </div>
     <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
-</div> 
+</div>  -->
+
+
+
+
+  <div class="card">
+      <div class="card-body">
+        <div class="header">
+          <h5 class="card-title"  [ngClass]="{'strike': !todo.active}">{{ todo.title }}  </h5>
+          <button class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
+          </div>
+          <p class="card-text" [ngClass]="{'strike': !todo.active}">{{ todo.desc }}</p>
+          <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" (click)="onCheckBoxClick(todo)" [checked]="!todo.active">
+              <label class="form-check-label">Done</label>
+          </div>
+          
+      </div>
+  </div>

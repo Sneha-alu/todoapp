@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+    .card {
+        max-width: 100%;
+    }
+}
+
+/* Using Flexbox for a responsive card layout */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    max-width: calc(33.33% - 20px); /* Adjust as needed for spacing */
+}
+
+#rightButton {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 10px; /* Adjust the margin as needed */
+}

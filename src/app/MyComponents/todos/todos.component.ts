@@ -6,7 +6,7 @@ import { Todo } from '../../Todo';
   styleUrls: ['./todos.component.css']
 })
 export class TodosComponent implements OnInit {
-
+  showCard: boolean = false;
   todos: Todo[] = [];
 
   localItem: string | null | undefined;

@@ -7,13 +7,15 @@ import { Todo } from 'src/app/Todo';
   styleUrls: ['./add-todo.component.css']
 })
 export class AddTodoComponent implements OnInit {
-
+  showCard: boolean = false;
 
   title: string = ""
   desc: string =""
 
   @Output()
   todoAdd : EventEmitter<Todo> = new EventEmitter();
+  @Output()
+  showAddCard : EventEmitter<Boolean> = new EventEmitter();
   constructor(){
 
   }
@@ -31,6 +33,13 @@ export class AddTodoComponent implements OnInit {
     }
 
     this.todoAdd.emit(todo)
+    this.showAddCard.emit(this.showCard)
+
+  }
+  onClick(){
+
+    this.showAddCard.emit(this.showCard)
+
   }
 
 }
